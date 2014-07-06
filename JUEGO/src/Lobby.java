@@ -78,22 +78,25 @@ public class Lobby extends javax.swing.JFrame {
         jPanel1.add(jButton3);
         jButton3.setBounds(20, 250, 120, 23);
 
+        jLabel3.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel3.setText("Cargar para continuar con el usuario guardado anteriormente y");
         jPanel1.add(jLabel3);
-        jLabel3.setBounds(10, 30, 330, 14);
+        jLabel3.setBounds(10, 30, 370, 13);
 
+        jLabel4.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel4.setText("Presione boton Iniciar para crear un nuevo usuario y comenzar partida,");
         jPanel1.add(jLabel4);
-        jLabel4.setBounds(10, 10, 360, 14);
+        jLabel4.setBounds(10, 10, 510, 13);
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel5.setText("Salir para volver a Windows");
         jPanel1.add(jLabel5);
-        jLabel5.setBounds(10, 50, 330, 14);
+        jLabel5.setBounds(10, 50, 330, 13);
 
-        jLabel6.setFont(new java.awt.Font("Palatino Linotype", 0, 18)); // NOI18N
+        jLabel6.setFont(new java.awt.Font("Trajan Pro", 0, 18)); // NOI18N
         jLabel6.setText("Conquistadores");
         jPanel1.add(jLabel6);
-        jLabel6.setBounds(170, 260, 140, 40);
+        jLabel6.setBounds(160, 260, 220, 40);
 
         jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/lobby.jpg"))); // NOI18N
         jPanel1.add(jLabel1);

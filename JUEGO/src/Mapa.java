@@ -189,34 +189,42 @@ public class Mapa extends javax.swing.JFrame {
         jPanel1.add(jLabel2);
         jLabel2.setBounds(230, 400, 160, 30);
 
+        jLabel5.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel5.setText("Conquista todo el");
         jPanel1.add(jLabel5);
         jLabel5.setBounds(10, 310, 170, 20);
 
+        jLabel6.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel6.setText("continente");
         jPanel1.add(jLabel6);
         jLabel6.setBounds(10, 330, 170, 20);
 
+        jLabel7.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel7.setText("Los pilotos son");
         jPanel1.add(jLabel7);
         jLabel7.setBounds(10, 350, 170, 20);
 
+        jLabel8.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel8.setText("los intentos");
         jPanel1.add(jLabel8);
         jLabel8.setBounds(10, 370, 170, 20);
 
+        jLabel9.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel9.setText("restantes");
         jPanel1.add(jLabel9);
         jLabel9.setBounds(10, 390, 170, 20);
 
+        jLabel10.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel10.setText("Guardar te permite");
         jPanel1.add(jLabel10);
         jLabel10.setBounds(10, 410, 170, 20);
 
+        jLabel11.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel11.setText("continuar tu");
         jPanel1.add(jLabel11);
         jLabel11.setBounds(10, 430, 170, 20);
 
+        jLabel12.setFont(new java.awt.Font("Tahoma", 0, 9)); // NOI18N
         jLabel12.setText("progreso otro dia");
         jPanel1.add(jLabel12);
         jLabel12.setBounds(10, 450, 170, 20);
