@@ -41,12 +41,17 @@ public class NewJFrame extends javax.swing.JFrame {
     String p = "perdedor";
     String g= "ganador";
     WindowManager wm;
+    int posx;
+    int posy;
     public NewJFrame(WindowManager wm) {
         this.wm=wm;
         initComponents();
         this.setLocationRelativeTo(null);
         setSize(490, 370);
         temp=100;
+        posx = (int)jLabel1.getLocation().getX();
+        posy = (int)jLabel1.getLocation().getY();
+        jLabel2.setVisible(false);
         
         
         
@@ -56,6 +61,9 @@ public class NewJFrame extends javax.swing.JFrame {
     }
     public void perdiste (){
         temp=100;
+        jLabel1.setVisible(false);
+        jLabel2.setLocation(posx,posy);
+        jLabel2.setVisible(true);
         if(wm.lobby.j.getPilotos()==0){
                         JOptionPane.showMessageDialog(null, "GAME OVER");
                         String a=wm.lobby.j.getNombre();
@@ -70,6 +78,7 @@ public class NewJFrame extends javax.swing.JFrame {
             wm.minijuego.setVisible(false);
             wm.mapa.setVisible(true);
             wm.mapa.setbotones(wm.lobby.j);
+            jLabel1.setVisible(true);
             
         }
     }
@@ -83,7 +92,7 @@ public class NewJFrame extends javax.swing.JFrame {
         y7=0;
         y8=0;
         y9=0;
-        
+        jLabel2.setVisible(false);
         
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
@@ -291,6 +300,7 @@ public class NewJFrame extends javax.swing.JFrame {
         jLabel12 = new javax.swing.JLabel();
         jLabel13 = new javax.swing.JLabel();
         jLabel14 = new javax.swing.JLabel();
+        jLabel2 = new javax.swing.JLabel();
         ABAJO = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
@@ -370,6 +380,10 @@ public class NewJFrame extends javax.swing.JFrame {
         jPanel1.add(jLabel14);
         jLabel14.setBounds(220, 60, 10, 30);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/explo.png"))); // NOI18N
+        jPanel1.add(jLabel2);
+        jLabel2.setBounds(190, 270, 30, 40);
+
         ABAJO.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Images/11.jpg"))); // NOI18N
         jPanel1.add(ABAJO);
         ABAJO.setBounds(0, 0, 490, 340);
@@ -429,6 +443,7 @@ public class NewJFrame extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel14;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel7;
