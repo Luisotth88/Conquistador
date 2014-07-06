@@ -49,8 +49,6 @@ public class NewJFrame extends javax.swing.JFrame {
         this.setLocationRelativeTo(null);
         setSize(490, 370);
         temp=100;
-        posx = (int)jLabel1.getLocation().getX();
-        posy = (int)jLabel1.getLocation().getY();
         jLabel2.setVisible(false);
         
         
@@ -62,8 +60,9 @@ public class NewJFrame extends javax.swing.JFrame {
     public void perdiste (){
         temp=100;
         jLabel1.setVisible(false);
-        jLabel2.setLocation(posx,posy);
+        jLabel2.setLocation((int)jLabel1.getLocation().getX(),(int)jLabel1.getLocation().getY());
         jLabel2.setVisible(true);
+        wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
         if(wm.lobby.j.getPilotos()==0){
                         JOptionPane.showMessageDialog(null, "GAME OVER");
                         String a=wm.lobby.j.getNombre();
@@ -73,7 +72,7 @@ public class NewJFrame extends javax.swing.JFrame {
                         
                     }
         else{
-            wm.lobby.j.setPilotos(wm.lobby.j.getPilotos()-1);
+            
             JOptionPane.showMessageDialog(null, "Has perdido");
             wm.minijuego.setVisible(false);
             wm.mapa.setVisible(true);
@@ -93,7 +92,7 @@ public class NewJFrame extends javax.swing.JFrame {
         y8=0;
         y9=0;
         jLabel2.setVisible(false);
-        
+        jLabel1.setLocation(255,270);
         x1=posicionxaleatoria();
         x2=posicionxaleatoria();
         x3=posicionxaleatoria();
