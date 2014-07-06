@@ -1,15 +1,6 @@
 
 import javax.swing.JOptionPane;
 
-/*
- * To change this template, choose Tools | Templates
- * and open the template in the editor.
- */
-
-/**
- *
- * @author sala_
- */
 public class Mapa extends javax.swing.JFrame {
 
     /**
